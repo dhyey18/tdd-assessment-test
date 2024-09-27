@@ -31,3 +31,8 @@ it("should handle new lines between numbers", () => {
 it("should support custom delimiters", () => {
   expect(add("//;\n1;2")).toBe(3);
 });
+
+// Seventh Test: Negative Numbers Throw Exception
+it("should throw an exception for negative numbers", () => {
+  expect(() => add("1,-2")).toThrow("negative numbers not allowed: -2");
+});
