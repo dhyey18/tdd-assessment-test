@@ -21,3 +21,8 @@ it("should return the sum of two numbers separated by a comma", () => {
 it("should return the sum of an unknown amount of numbers", () => {
   expect(add("1,2,3,4,5")).toBe(15);
 });
+
+// Fifth Test: Handle Newline Separators
+it("should handle new lines between numbers", () => {
+  expect(add("1\n2,3")).toBe(6);
+});
