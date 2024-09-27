@@ -26,3 +26,8 @@ it("should return the sum of an unknown amount of numbers", () => {
 it("should handle new lines between numbers", () => {
   expect(add("1\n2,3")).toBe(6);
 });
+
+// Sixth Test: Support a custom delimiter specified in the format //[delimiter]\n.
+it("should support custom delimiters", () => {
+  expect(add("//;\n1;2")).toBe(3);
+});
