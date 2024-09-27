@@ -16,3 +16,8 @@ it("should return the number itself when one number is passed", () => {
 it("should return the sum of two numbers separated by a comma", () => {
   expect(add("1,2")).toBe(3);
 });
+
+// Fourth Test: Handle Unknown Number of Numbers
+it("should return the sum of an unknown amount of numbers", () => {
+  expect(add("1,2,3,4,5")).toBe(15);
+});
